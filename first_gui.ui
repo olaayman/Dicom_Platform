@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>672</width>
-    <height>544</height>
+    <width>779</width>
+    <height>705</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -22,10 +22,10 @@
   <widget class="QPushButton" name="Browse_Button">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>490</y>
-     <width>71</width>
-     <height>31</height>
+     <x>110</x>
+     <y>610</y>
+     <width>121</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -54,7 +54,7 @@
   <widget class="QGraphicsView" name="Sagittal_Plane">
    <property name="geometry">
     <rect>
-     <x>320</x>
+     <x>400</x>
      <y>50</y>
      <width>281</width>
      <height>181</height>
@@ -64,8 +64,8 @@
   <widget class="QGraphicsView" name="Coronal_Plane">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>290</y>
+     <x>20</x>
+     <y>360</y>
      <width>281</width>
      <height>181</height>
     </rect>
@@ -74,8 +74,8 @@
   <widget class="QGraphicsView" name="Diagonal_Plane">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>290</y>
+     <x>410</x>
+     <y>360</y>
      <width>281</width>
      <height>181</height>
     </rect>
@@ -86,7 +86,7 @@
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>131</width>
+     <width>191</width>
      <height>31</height>
     </rect>
    </property>
@@ -102,9 +102,9 @@
   <widget class="QLabel" name="Sagittal_Label">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>400</x>
      <y>10</y>
-     <width>131</width>
+     <width>181</width>
      <height>31</height>
     </rect>
    </property>
@@ -121,8 +121,8 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>250</y>
-     <width>131</width>
+     <y>320</y>
+     <width>271</width>
      <height>31</height>
     </rect>
    </property>
@@ -138,9 +138,9 @@
   <widget class="QLabel" name="Diagonal_Label">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>250</y>
-     <width>131</width>
+     <x>410</x>
+     <y>320</y>
+     <width>201</width>
      <height>31</height>
     </rect>
    </property>
@@ -150,7 +150,174 @@
     </font>
    </property>
    <property name="text">
-    <string>Diagonal Plane:</string>
+    <string>Oblique Plane:</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="AxialHorizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="tickPosition">
+    <enum>QSlider::NoTicks</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="CoronalHorizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>550</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="SagittalHorizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>240</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="DiagonalHorizontalSlider">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>550</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="AxialVerticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>60</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="CoronalVerticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>370</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="SagittalVerticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>60</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>50</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="DiagonalVerticalSlider">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>370</y>
+     <width>22</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="obliqueLineSlider">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QSlider" name="obliqueLineSlopeSlider">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lineLength_label">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>600</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string>Length of the line = </string>
    </property>
   </widget>
  </widget>
